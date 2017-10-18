@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a408group.touromatic">
+
+    <!-- Include following permission if you load images from Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDdZOI7V3ig315QsHE1p6bf-Y1awTfDjdM" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExpertSearchActivity"
+            android:label="@string/title_activity_expert_search"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WizardSearchActivity"
+            android:label="@string/title_activity_wizard_search"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CategoryDetailsActivity"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SearchResultListActivity"
+            android:label="@string/title_searchresult_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchResultDetailActivity"
+            android:label="@string/title_searchresult_detail"
+            android:parentActivityName=".SearchResultListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.a408group.touromatic.SearchResultListActivity" />
+        </activity>
+        <activity
+            android:name=".RouteLegsListActivity"
+            android:label="Tour Stops"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".MapWithClusteredMarkersActivity"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".RouteSummaryMapActivity"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+    </application>
+
+</manifest>

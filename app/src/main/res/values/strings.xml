@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TourOMatic</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_expert_search">Expert Search</string>
+    <string name="title_activity_wizard_search">Wizard Search</string>
+
+    <string name="title_activity_details">Details</string>
+    <string name="title_home">Home</string>
+    <string name="title_search_results">Sites</string>
+    <string name="title_tour">Tour</string>
+    <string name="title_mytours">My Tours</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/architecture</item>
+        <item>@drawable/outdoors</item>
+        <item>@drawable/food_and_drink</item>
+        <item>@drawable/gallery</item>
+        <item>@drawable/monument</item>
+        <item>@drawable/museum</item>
+        <item>@drawable/oddity </item>
+        <item>@drawable/shopping</item>
+        <item>@drawable/roadside</item>
+    </string-array>
+    <string-array name="wizard_image_ids">
+
+        <item>@drawable/nearby </item>
+        <item>@drawable/daytrip </item>
+        <item>@drawable/on_the_way</item>
+        <item>@drawable/roadtrip</item>
+    </string-array>
+    <string name="title_item_list">Places Found</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_item_start">Startl</string>
+    <string name="title_item_end">End</string>
+    <string name="title_searchresult_list">Search Results</string>
+    <string name="title_searchresult_detail">Detail</string>
+    <string name="title_xyz_list">xyzs</string>
+    <string name="title_xyz_detail">xyz Detail</string>
+    <string name="search_rest">SearchRest</string>
+    <string name="TourItems">TourItems</string>
+    <string name="photos_title">Photos</string>
+    <string name="description_title">Description</string>
+    <string name="map_title">Map</string>
+    <string name="map_view">VIEW</string>
+    <string name="map_navigate">NAVIGATE</string>
+</resources>

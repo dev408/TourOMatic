@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.a408group.touromatic.SearchResultListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <Button
+            android:id="@+id/build_tour"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="0dp"
+            android:text="Build Tour"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="400dp" />
+
+
+            <Button
+                android:id="@+id/show_map"
+                android:layout_width="80dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:padding="0dp"
+                android:text="Map"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="550dp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/searchresult_list"
+            android:layout_width="match_parent"
+            android:layout_height="605dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="60dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
